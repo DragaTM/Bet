@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		
+        
+	</head>
+	<body>
+        <div class="blackout"></div>
+        <div class="popup">
+            <div class="popup__close"></div>
+            <div class="popup__game">
+                <div class="popup__team-1">
+                    <img src="img/team-logo/teams-logo-10.png" style="height:50px"><br>
+                    <span class="popup__team-name"><img src="img/team-flag/team-flag-2.png" style="width:21px">InVictus Pro</span>
+                    <a href="#" class="popup__profile-btn"><span>Profile </span><i></i></a>
+                    <a href="#" class="popup__unfollow-btn">Unfollow</a>  
+                    <div class="popup__rate">
+                        <div class="popup__rate-text">Rate:</div>
+                        <div class="popup__rate-ratio">1.56</div>
+                    </div>
+                </div>
+                <div class="popup__event">
+                    <img src="img/game-logo/game-logo-1.png" style="height:35px"><br>
+                    <div class="popup__event-game">League of Legends</div>
+                    <div class="popup__event-rating">Starseries</div>
+                    <div class="popup__event-date">11.04/18.00</div>
+                    <div class="popup__event-timer">In 0 Days 12:54:35</div>
+                    <div class="popup__event-bets">Avalaible bets:</div>
+                </div>
+                <div class="popup__team-2">
+                    <img src="img/team-logo/teams-logo-9.png" style="height:50px"><br>
+                    <span class="popup__team-name"><img src="img/team-flag/team-flag-1.png" style="width:21px">InVictus Pro</span>
+                    <a href="#" class="popup__profile-btn"><span>Profile </span><i></i></a>
+                    <a href="#" class="popup__follow-btn">Follow</a>  
+                    <div class="popup__rate">
+                        <div class="popup__rate-text">Rate:</div>
+                        <div class="popup__rate-ratio">2.56</div>
+                    </div>                
+                </div>
+            </div>
+            <div class="popup__bets">
+                <div><input type="radio" name="popup-bet" id="popup-bet-1" checked><label for="popup-bet-1"><span class="team-1">Win<i class="bet"></i></span></label></div>
+                <div><input type="radio" name="popup-bet" id="popup-bet-2"><label for="popup-bet-2"><span>First Blood<i></i></span></label></div>
+                <div><input type="radio" name="popup-bet" id="popup-bet-3"><label for="popup-bet-3"><span class="team-2">Win before Round 16<i class="bet"></i></span></label></div>
+            </div>
+            <div class="popup__place">
+                <div class="popup__amount-left">
+                    <div class="popup__enter-amount">Enter amount:</div>
+                    <input type="text" value="$0" name="amount-left" id="place-1-team">
+                    <div class="popup__can-win">You can win: $156</div>
+                    <div class="popup__bet-more">You can bet more: $94</div>
+                </div>
+                <div class="popup__bet-btn">
+                    <label class="popup__arrow-left" for="place-1-team"></label>
+                    <a href="#">Place a Bet!</a>
+                    <label class="popup__arrow-right" for="place-2-team"></label>
+                </div>
+                <div class="popup__amount-right">
+                    <div class="popup__enter-amount">Enter amount:</div>
+                    <input type="text" value="$0" name="amount-right" id="place-2-team">
+                    <div class="popup__can-win">You can win: $156</div>
+                    <div class="popup__bet-more">You can bet more: $94</div>
+                </div>
+            </div>
+            <div class="popup__bets-table">
+                <div class="popup__bet-table-title">You existing bets:</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="team">Team</th>
+                            <th class="bet">Bet</th>
+                            <th>Amount</th>
+                            <th>Rate</th>
+                            <th>Prize</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="team">Invictus Pro</td>
+                            <td class="bet">Win</td>
+                            <td>$115</td>
+                            <td>1.48</td>
+                            <td>$170.2</td>
+                        </tr>
+                        <tr>
+                            <td class="team">Invictus Pro</td>
+                            <td class="bet">Win</td>
+                            <td>$115</td>
+                            <td>1.48</td>
+                            <td>$170.2</td>
+                        </tr>
+                        <tr>
+                            <td class="team">Invictus Pro</td>
+                            <td class="bet">Win</td>
+                            <td>$115</td>
+                            <td>1.48</td>
+                            <td>$170.2</td>
+                        </tr>                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

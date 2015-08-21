@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        
+	</head>
+	<body>
+        <div class="wrapper">
+            <div class="bg-page">
+                <div class="header">
+                    <div class="positioner">
+                        <div class="header__menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Bonus</a></li>
+                                <li class="active"><a href="#">Broadcast</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__account">
+                            <div class="account-name">AlexMante</div>
+                            <div class="account-balance">$238.45</div>
+                            <a class="account-bets" href="#">You Bets</a>
+                            <a class="account-payments" href="#">Payments</a>
+                        </div>
+                        <div class="cabinet">
+                            <div class="cabinet__message"><i class="new"></i></div>
+                            <div class="cabinet__language">En</div>
+                            <div class="cabinet__login"><i></i>Log Out</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="filter">
+                        <div class="positioner">
+                            <a class="logo" href="#"></a>
+                            <ul class="games-filter">
+                                <input type="checkbox" name="games-filter" checked id="games-filter-1"><li><label for="games-filter-1"><i class="icon-1"></i><span>League of<br>Legend</span></label></li>
+                                <input type="checkbox" name="games-filter" id="games-filter-2"><li><label for="games-filter-2"><i class="icon-2"></i><span>Dota 2</span></label></li>
+                                <input type="checkbox" name="games-filter" checked id="games-filter-3"><li><label for="games-filter-3"><i class="icon-3"></i><span>Heroes of<br>the Storm</span></label></li>
+                                <input type="checkbox" name="games-filter" id="games-filter-4"><li><label for="games-filter-4"><i class="icon-4"></i><span>Hearthstone</span></label></li>
+                                <input type="checkbox" name="games-filter" checked id="games-filter-5"><li><label for="games-filter-5"><i class="icon-5"></i><span>Starcraft 2</span></label></li>
+                                <input type="checkbox" name="games-filter" checked id="games-filter-6"><li><label for="games-filter-6"><i class="icon-6"></i><span>CS: GO</span></label></li>
+                            </ul>
+                            <ul class="filter-menu">
+                                <li><span>Matches<i></i></span></li>
+                                <li><span>Recent Results<i class="new"></i></span></li>
+                                <li><span>Tournaments<i></i></span></li>
+                            </ul>
+                            <div class="filter-result">
+                                <div class="result-title">Current tournaments</div>
+                                <div class="result-description">Click tournament to make a bet You can bet on upcoming tournaments overall results.</div>
+                            </div>
+                            <div class="tournament">
+                                <div class="tournament-name">ESL One Katowice 2015</div>
+                                <div class="tournament-date">August 15-19, 2015</div>
+                                <div class="tournament-logo"><img src="img/tournament-logo.png" style="height:105px;"><img class="game-logo" src="img/game-logo.png" style="height:75px;"></div>
+                            </div>                                
+                            <table class="teams-list">
+                                <thead>
+                                    <tr class="teams-title">
+                                        <th colspan="8">Teams:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="team-logo">
+                                        <td><img src="img/team-logo/teams-logo-1.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-2.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-3.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-4.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-5.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-6.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-7.png" style="width:65px"></td>
+                                        <td><img src="img/team-logo/teams-logo-8.png" style="width:65px"></td>
+                                    </tr>
+                                    <tr class="team-flag">
+                                        <td><img src="img/team-flag/team-flag-1.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-2.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-2.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-1.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-2.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-3.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-1.png" style="width:22px"></td>
+                                        <td><img src="img/team-flag/team-flag-1.png" style="width:22px"></td>
+                                    </tr>
+                                    <tr class="team-name">
+                                        <td>Natus<br>Vincere</td>
+                                        <td>Natus<br>Vincere</td>
+                                        <td>Natus<br>Vincere</td>
+                                        <td>Natus<br>Vincere</td>
+                                        <td>Natus<br>Vincere</td>
+                                        <td>Virtus<br>Pro</td>
+                                        <td>Virtus<br>Pro</td>
+                                        <td>Virtus<br>Pro</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tournament-timer">Start in <span>08</span>days</div>
+                            <a class="bet-btn" href="#">Place a Bet!</a>
+                            <div class="dividing-line"></div>
+                            <div class="recent-results">
+                                <div class="recent-results__title">Recent tournaments results</div>
+                                <div class="recent-results__comment">click on tournament to see details.</div>
+                                <div class="recent-results__comment">Best odds are shown in boxes.</div>
+                                <table class="result-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="active"><span><i></i>Date</span></th>
+                                            <th><span><i></i>Game</span></th>
+                                            <th><span><i></i>Event</span></th>
+                                            <th><span><i></i>Winner</span></th>
+                                            <th><span><i></i>Winnin Rate</span></th>
+                                            <th><span><i></i>Teams</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>0.04-12.04</td>
+                                            <td><img src="img/game-logo/game-logo-2.png" style="width:30px"></td>
+                                            <td>StarLadder Season 11<br><img src="img/tournament-logo-2.png" style="width:180px"></td>
+                                            <td>Invictus Gaming</td>
+                                            <td><span class="best-odd">2.65</span></td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25.03-29.03</td>
+                                            <td><img src="img/game-logo/game-logo-1.png" style="width:30px"></td>
+                                            <td>IEM League Ultimate<br><img src="img/tournament-logo-3.png" style="width:180px"></td>
+                                            <td>Cloud 9</td>
+                                            <td><span>34.5</span></td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>           
+                                </table>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="special">
+                <div class="positioner">
+                    <div class="special-title">Special Offer</div>
+                    <div class="offer-1"><div class="offer-1__text">Invite a friend and get a <span>$50</span> bonus.<br>
+And so does he. once he makes a deposit</div></div>
+                    <div class="offer-2"><div class="offer-2__text">Get <span>Credits</span> with every bet you make.<br>
+Spend them in our store to get bonuses!</div></div>
+                    <div class="special-links">Get your referral link in <a href="#">Profile</a> and spend Credits in <a href="#">Bonus section</a></div>
+                    <div class="special-reminder">Don’t forget to install our app!</div>
+                </div>
+            </div>
+            <div class="install">
+                <div class="positioner">
+                    <div class="install-app">
+                        <div class="install-bg"><img src="img/download-bg.png"></div>
+                        <div class="install-app__title">And you won’t miss out on anything.<br>Our app has it  all:</div>
+                        <ul class="install-app__list">
+                            <li>- make bets</li>
+                            <li>- follow favourite teams</li>
+                            <li>- get notified on bets outcomes</li>
+                            <li>- claim your winnings</li>
+                            <li>- talk it over in our chat</li>
+                            <li>- get extra Credits for using our app</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="download">
+                <div class="positioner">
+                    <div class="download-title">Download now:</div>
+                    <div class="download-links"><a href="#" class="download-as"></a><a href="#" class="download-gp"></a></div>
+                </div>
+            </div>
+            <div class="footer-buffer"></div>
+        </div>
+        <div class="footer">
+            <div class="positioner">
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#">About & Contact Information</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center">
+                    <div class="support">
+                        <div class="support__text">Online support:</div>
+                        <a class="support__btn" href="#">Ask for Help</a>
+                    </div>
+                    <div class="copyright">© 2015 eSportsLeague Ltd. All Rights reserved.</div>
+                    <div class="warning">Warning: Gaming involves risk. You may lose money. Gambling can be addictive. Please play responsibly.<br>
+If  you  think  you may have a problem, please refer to our <a href="#">Gampling Policy.</a><br>
+eSportsLeague memebers must be 18 or over</div>
+                
+                </div>
+                <div class="footer-right">
+                    <div class="social">
+                        <div class="social__text">Join our communities<br>
+to make sure you get all the latest news:</div>
+                        <ul class="social__icons">
+                            <li><a class="social-fb" href="#"></a></li>
+                            <li><a class="social-tw" href="#"></a></li>
+                            <li><a class="social-gp" href="#"></a></li>
+                            <li><a class="social-vk" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
