@@ -243,6 +243,10 @@ th {
     font-style: normal;
 }
 
+body{
+    background: #131313;
+}
+
 .blackout{
     text-align: center;
     position: fixed;
@@ -851,14 +855,29 @@ th {
 
 .cabinet__language{
     cursor: pointer;
+    width: 27px;
+    height: 30px;
+    vertical-align: bottom;
+    overflow: hidden;
     display: inline-block;
     margin-left: 50px;
-    padding: 0 12px;
+    padding: 0 10px;
     color: #ffffff;
     margin-top: 7px;
     border: 2px solid #ffffff;
     border-radius: 4px;
     font: 18px/30px 'MorganSans', sans-serif;
+}
+
+.cabinet__language select{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+}
+
+.cabinet__language option{
+    color: #000000;
 }
 
 .cabinet__login{
@@ -2369,14 +2388,26 @@ th {
     right: 3px;
 }
 
-.time-zone__bg input{
+.time-zone__field{
     color: #1c1c1c;
-    border: none;
-    width: 243px;
+    background: #ffffff;
+    width: 253px;
+    padding-right: 10px;
     height: 100%;
+    overflow: hidden;
     border-radius: 3px; 
-    padding: 0px 10px;
     font: 16px/26px 'MorganSans', sans-serif;
+}
+
+.time-zone__field select{
+    outline: 0;
+    border: 0;
+    padding: 0px 80px 0px 10px;
+    -webkit-appearance: none;
+}
+
+.time-zone__field option{
+    
 }
 
 .time-zone__text{
@@ -2865,12 +2896,14 @@ th {
 }
 
 .list-games__table thead tr th{
+    padding: 8px;
     padding-bottom: 4px;
     color: #fdfdfd;
     font: 24px/30px 'MorganSans', sans-serif;
 }
 
-.list-games__table tbody tr td{
+.list-games__table tbody tr td,
+.list-games__table tbody tr th{
     padding: 8px;
     position: relative;
 }
@@ -2881,8 +2914,8 @@ th {
 
 .list-games__table thead tr th:nth-child(3),
 .list-games__table thead tr th:nth-child(5),
-.list-games__table tbody tr td:nth-child(3),
-.list-games__table tbody tr td:nth-child(5){
+.list-games__table tbody tr td:nth-child(4),
+.list-games__table tbody tr td:nth-child(6){
     text-align: left;
     padding-left: 20px;
 }
@@ -2900,40 +2933,41 @@ th {
     color: #5fe56a;
 }
 
+.list-games__table tbody tr:nth-child(2n-1) th:nth-child(1),
 .list-games__table tbody tr:nth-child(2n-1) td:nth-child(1),
 .list-games__table tbody tr:nth-child(2n-1) td:nth-child(2),
-.list-games__table tbody tr:nth-child(2n-1) td:nth-child(7),
-.list-games__table tbody tr:nth-child(2n-1) td:nth-child(8){
+.list-games__table tbody tr:nth-child(2n-1) td:nth-child(3),
+.list-games__table tbody tr:nth-child(2n-1) td:nth-child(8),
+.list-games__table tbody tr:nth-child(2n-1) td:nth-child(9){
     background: #131313;
 }
 
+.list-games__table tbody tr:nth-child(2n) th:nth-child(1),
 .list-games__table tbody tr:nth-child(2n) td:nth-child(1),
 .list-games__table tbody tr:nth-child(2n) td:nth-child(2),
-.list-games__table tbody tr:nth-child(2n) td:nth-child(7),
-.list-games__table tbody tr:nth-child(2n) td:nth-child(8){
+.list-games__table tbody tr:nth-child(2n) td:nth-child(3),
+.list-games__table tbody tr:nth-child(2n) td:nth-child(8),
+.list-games__table tbody tr:nth-child(2n) td:nth-child(9){
     background: #2b2b2b;
 }
 
+.list-games__table tbody tr:hover th:nth-child(1),
 .list-games__table tbody tr:hover td:nth-child(1),
 .list-games__table tbody tr:hover td:nth-child(2),
-.list-games__table tbody tr:hover td:nth-child(7),
-.list-games__table tbody tr:hover td:nth-child(8){
+.list-games__table tbody tr:hover td:nth-child(3),
+.list-games__table tbody tr:hover td:nth-child(8),
+.list-games__table tbody tr:hover td:nth-child(9){
     background: #203816;
 }
 
-.list-games__table thead tr th:nth-child(1),
-.list-games__table tbody tr td:nth-child(1){
-    padding-left: 20px;
-}
-
-.list-games__table thead tr th:nth-child(8),
-.list-games__table tbody tr td:nth-child(8){
+.list-games__table tr th:nth-child(9),
+.list-games__table tr td:nth-child(9){
     padding-right: 20px;
 }
 
-.list-games__table tbody tr td:nth-child(4),
-.list-games__table tbody tr td:nth-child(6),
-.list-games__table tbody tr td:nth-child(7){
+.list-games__table tbody tr td:nth-child(5),
+.list-games__table tbody tr td:nth-child(7),
+.list-games__table tbody tr td:nth-child(8){
     font: 24px/30px 'MorganSansBold', sans-serif;
 }
 
@@ -2941,7 +2975,25 @@ th {
     padding: 0 4px 0 0;
 }
 
-.list-games__table tbody tr.multi i.type{
+.list-games__table tbody tr i.type{
+    position: absolute;
+    display: block;
+}
+
+.list-games__table tbody tr.game-sub{
+    display: none;
+}
+
+.list-games__table tbody tr.game-sub i.type{
+    height: 30px;
+    width: 10px;
+    top: 0;
+    left: 0px;
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+
+.list-games__table tbody tr i.multi{
     position: absolute;
     display: block;
     width: 19px;
@@ -2951,17 +3003,17 @@ th {
     background: url(../img/recent-table-icons.png) no-repeat -100px -5px;
 }
 
-.list-games__table tbody tr.advice i.type{
+.list-games__table tbody tr i.advice{
     position: absolute;
     display: block;
     width: 38px;
     height: 35px;
     top: 8px;
-    left: -20px;
+    left: -21px;
     background: url(../img/recent-table-icons.png) no-repeat -5px -5px;
 }
 
-.list-games__table tbody tr.win i.bet{
+.list-games__table tbody tr i.bet-win{
     position: absolute;
     display: block;
     height: 43px;
@@ -2971,7 +3023,7 @@ th {
     background: url(../img/recent-table-icons.png) no-repeat -5px -51px;
 }
 
-.list-games__table tbody tr.loss i.bet{
+.list-games__table tbody tr i.bet-loss{
     position: absolute;
     display: block;
     height: 37px;
