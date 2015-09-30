@@ -1470,10 +1470,10 @@ body{
     cursor: pointer;
 }
 
-.games-filter label i{
+.games-filter label img{
     display: block;
     top: 7px;
-    left: -18px;
+    left: -20px;
     z-index: 5;
     position: absolute;
     height: 36px;
@@ -1485,30 +1485,6 @@ body{
     border-color: #ffffff;
 }
 
-.games-filter i.icon-1{
-    background: url(../img/game-logo/game-logo-1.png) no-repeat 0px 0px;
-}
-
-.games-filter i.icon-2{
-    background: url(../img/game-logo/game-logo-5.png) no-repeat 0px 0px;
-}
-
-.games-filter i.icon-3{
-    background: url(../img/game-logo/game-logo-3.png) no-repeat 0px 0px;
-}
-
-.games-filter i.icon-4{
-    left: -22px;
-    background: url(../img/game-logo/game-logo-6.png) no-repeat 0px 0px;
-}
-
-.games-filter i.icon-5{
-    background: url(../img/game-logo/game-logo-7.png) no-repeat 0px 0px;
-}
-
-.games-filter i.icon-6{
-    background: url(../img/game-logo/game-logo-4.png) no-repeat 0px 0px;
-}
 .filter{
     text-align: center;
 } 
