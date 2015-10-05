@@ -273,6 +273,17 @@ body{
     content: '';
 }
 
+.popup-login{
+	position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	z-index: 1000;
+	width: 710px;
+	padding: 20px;
+	border-radius: 17px;
+	background: #ffffff;
+}
+
 .popup{
     position: relative;
     vertical-align: middle;
@@ -295,6 +306,152 @@ body{
     right: 13px;
 }
 
+.popup-login .popup__close{
+	top: 15px;
+	right: 17px;
+	position: absolute;
+	width: 19px;
+    height: 20px;
+	background: url(../img/popup-login-icons.png) no-repeat -5px -5px;
+}
+
+.popup-login__title{
+	padding: 13px 13px 38px 13px;
+	text-align: center;
+	color: #252525;
+	font: 28px/30px 'MorganSans', sans-serif;
+}
+
+.popup-login__body{
+	background-color: #e6e6e6;
+	height: 425px;
+	overflow: hidden;
+	width: 670px;
+	margin: auto;
+}
+
+.popup-login__form{
+	width: 330px;
+	float: left;
+	padding: 27px 10px 10px 45px;
+}
+
+.popup-login__image{
+	float: right;
+}
+
+.social-reg__title,
+.email-reg__title{
+	padding-bottom: 7px;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+}
+
+.social-reg__social-icons a{
+	height: 40px;
+	width: 40px;
+	margin-right: 6px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 3px;
+	background: url(../img/popup-login-icons.png) no-repeat;
+}
+
+.social-reg__social-icons a:nth-child(1){
+	background-position: -34px -5px;
+}
+
+.social-reg__social-icons a:nth-child(2){
+	background-position: -5px -55px;
+}
+
+.social-reg__social-icons a:nth-child(3){
+	background-position: -55px -55px;
+}
+
+.social-reg__social-icons a:nth-child(4){
+	background-position: -84px -5px;
+}
+
+.social-reg__social-icons a:nth-child(5){
+	background-position: -105px -55px;
+}
+
+.popup-login__email-reg{
+	padding: 26px 0 4px 0; 
+}
+
+.popup-login__email-reg input{
+	width: 265px;
+	border-radius: 10px;
+	border: 2px solid #bfbfbf;
+	margin: 4px 0 8px 0;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+	padding: 4px 15px;
+	
+}
+
+.currency-reg{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+}
+
+.popup-login__currency-reg input{
+	display: none;
+}
+
+.popup-login__currency-reg label{
+	padding: 0 30px;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+	background: url(../img/popup-login-radio.png) no-repeat -10px -5px;
+}
+
+.popup-login__currency-reg input:checked+label{
+	background-position: -10px -45px;
+}
+
+.popup-login__form input[type="submit"]{
+	margin: 15px 0 5px 0;
+	background-color: #54adff;
+	background-image: linear-gradient(to bottom, #54adff, #035dd7);
+	text-align: center;
+	border-radius: 9px;
+	height: 52px;
+	width: 295px;
+	border: none;
+	color: #fafafa;
+	font: 30px/30px 'MorganSans', sans-serif;
+}
+
+.popup-login__form-term{
+	color: #898989;
+	font: 13px/30px 'MorganSans', sans-serif;
+}
+
+.clear-fix{
+	display: table;
+	clear: both;
+}
+
+.popup-login__sign-in{
+	padding: 30px 10px 8px 10px;
+	text-align: center;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+}
+
+.popup-login__sign-in a{
+	color: #166fe0;
+	text-decoration: none;
+}
 .popup__game{
     text-align: center;
     position: relative;
@@ -748,6 +905,10 @@ body{
     width: 1200px;
     margin: auto;
     position: relative;
+}
+
+.main{
+	background-color: #1a1a1a;
 }
 
 .header .positioner,
@@ -3099,4 +3260,61 @@ body{
     font: 14px/28px 'MorganSans', sans-serif;
     padding: 0 7px 5px 7px;
     text-align: left;
+}
+
+.text-page__title{
+	padding: 50px;
+	text-align: center;
+	color: #ffffff;
+	font: 30px/30px 'MorganSans', sans-serif;
+}
+
+.text-page__content{
+	padding: 15px 0 63px 0;
+}
+
+.text-page__text{
+	text-align: left;
+	width: 620px;
+	margin: 0 auto 65px auto;
+}
+
+.text-page__content h2{
+	color: #fafafa;
+	font: 21px/30px 'MorganSans', sans-serif;
+}
+
+.text-page__content p{
+	color: #979797;
+	font: 15px/18px 'MorganSans', sans-serif;
+}
+
+.pagination{
+	text-align: center;
+}
+
+.pagination a{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 35px;
+	height: 28px;
+	border: 2px solid #555555;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #979797;
+	padding-top: 7px;
+	margin: 0 3px;
+}
+
+.pagination a.prev,
+.pagination a.next{
+	margin: 0 15px;
+	font: 30px/18px 'MorganSans', sans-serif;
+}
+
+.pagination a.current{
+	color: #fffefe;
+	background: #131313;
+	border-color: #131313;
 }
