@@ -9,38 +9,68 @@
         
 	</head>
 	<body>
-        <div class="blackout"></div>
-        <div class="popup-login">
-            <div class="popup__close"></div>
-            <div class="popup-login__title">Registration</div>
-            <div class="popup-login__body">
-            	<form  class="popup-login__form" action="/echo" method="post">
-            		<div class="popup-login__social-reg">
-            			<div class="social-reg__title">Register with social networks:</div>
-            			<div class="social-reg__social-icons">
-            				<a href="#"></a>
-            				<a href="#"></a>
-            				<a href="#"></a>
-            			</div>
-            		</div>
-            		<div class="popup-login__email-reg">
-            			<div class="email-reg__title">Or register by e-mail:</div>
-            			<input type="email" name="login-email" placeholder="E-mail">
-            			<input type="password" name="login-password" placeholder="Password">
-            		</div>
-            		<div class="popup-login__currency-reg">
-            			<div class="currency-reg">Currency:</div>
-            			<input id="currency-reg-usd" type="radio" name="currency-reg-radio" checked><label for="currency-reg-usd">usd</label>
-            			<input id="currency-reg-rub" type="radio" name="currency-reg-radio"><label for="currency-reg-rub">rub</label>
-            		</div>
-            		<input type="submit" value="Register">
-            		<div class="popup-login__form-term">I have read bla bla bla terms of trali-vali</div>
-            	</form>
-            	<div class="popup-login__image"><img src="img/popup-login-img.jpg" alt="deposit-image"></div>
-            	<div class="clear-fix"></div>
-            </div>
-            <div class="popup-login__sign-in">Already registered? <a href="#">Sign In</a>
-            </div>
+       	<a class="popup-login-btn" href="#">Login popup</a>
+       	<a class="popup-reg-btn" href="#">Registration popup</a>
+        <div class="overlay-popup">
+			<div class="popup-reg">
+				<div class="popup-reg__close"></div>
+				<div class="popup-login__title">Registration</div>
+				<div class="popup-login__body">
+					<form  class="popup-login__form" action="/echo" method="post">
+						<div class="popup-login__social-reg">
+							<div class="social-reg__title">Register with social networks:</div>
+							<div class="social-reg__social-icons">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+						</div>
+						<div class="popup-login__email-reg">
+							<div class="email-reg__title">Or register by e-mail:</div>
+							<input type="email" name="login-email" placeholder="E-mail">
+							<input type="password" name="login-password" placeholder="Password">
+						</div>
+						<div class="popup-login__currency-reg">
+							<div class="currency-reg">Currency:</div>
+							<input id="currency-reg-usd" type="radio" name="currency-reg-radio" checked><label for="currency-reg-usd">usd</label>
+							<input id="currency-reg-rub" type="radio" name="currency-reg-radio"><label for="currency-reg-rub">rub</label>
+						</div>
+						<input type="submit" value="Register">
+						<div class="popup-login__form-term">I have read bla bla bla terms of trali-vali</div>
+					</form>
+					<div class="popup-login__image"><img src="img/popup-login-img.jpg" alt="deposit-image"></div>
+					<div class="clear-fix"></div>
+				</div>
+				<div class="popup-login__sign-in">Already registered? <a class="js-popup-login-switch" href="#">Sign In</a>
+				</div>
+			</div>
+			<div class="popup-login">
+				<div class="popup-login__close"></div>
+				<div class="popup-login__title">Login</div>
+				<div class="popup-login__body">
+					<form  class="popup-login__form" action="/echo" method="post">
+						<div class="popup-login__social-reg">
+							<div class="social-reg__title">Login with social networks:</div>
+							<div class="social-reg__social-icons">
+								<a href="#"></a>
+								<a href="#"></a>
+								<a href="#"></a>
+							</div>
+						</div>
+						<div class="popup-login__email-reg">
+							<div class="email-reg__title">Or login by e-mail:</div>
+							<input type="email" name="login-email" placeholder="E-mail">
+							<input type="password" name="login-password" placeholder="Password">
+						</div>
+						<input type="submit" value="Login">
+						<div class="popup-login__form-term">I have read bla bla bla terms of trali-vali</div>
+					</form>
+					<div class="popup-login__image"><img src="img/popup-login-img.jpg" alt="deposit-image"></div>
+					<div class="clear-fix"></div>
+				</div>
+				<div class="popup-login__sign-in">No account? <a class="js-popup-reg-switch" href="#">Register</a>
+				</div>
+			</div>
         </div>
         <script src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>

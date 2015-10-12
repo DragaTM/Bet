@@ -299,15 +299,42 @@ body{
     content: '';
 }
 
-.popup-login{
+.overlay-popup{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+    z-index: 9;
+	top: 0;
+	left: 0;
+    height: 100%;
+    width: 100%;
+	display: none;
+	text-align: center;
+}
+
+.js-overlay-show{
+	display: inline-block;
+}
+
+.overlay-popup:after{
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+
+.popup-login,
+.popup-reg{
 	position: relative;
 	vertical-align: middle;
-	display: inline-block;
+	display: none;
 	z-index: 1000;
 	width: 710px;
 	padding: 20px;
 	border-radius: 17px;
 	background: #ffffff;
+	text-align: left;
 }
 
 .popup{
@@ -321,6 +348,10 @@ body{
     border-radius: 17px;
 }
 
+.js-popup-show{
+	display: inline-block;
+}
+
 .popup__close{
     cursor: pointer;
     position: absolute;
@@ -332,7 +363,9 @@ body{
     right: 13px;
 }
 
-.popup-login .popup__close{
+.popup-reg__close,
+.popup-login__close{
+	cursor: pointer;
 	top: 15px;
 	right: 17px;
 	position: absolute;
@@ -419,7 +452,6 @@ body{
 	color: #515151;
 	font: 20px/30px 'MorganSans', sans-serif;
 	padding: 4px 15px;
-	
 }
 
 .currency-reg{
@@ -471,17 +503,20 @@ body{
 	clear: both;
 }
 
-.popup-login__sign-in{
+.popup-login__sign-in,
+.popup-login__registr{
 	padding: 30px 10px 8px 10px;
 	text-align: center;
 	color: #515151;
 	font: 20px/30px 'MorganSans', sans-serif;
 }
 
-.popup-login__sign-in a{
+.popup-login__sign-in a,
+.popup-login__registr a{
 	color: #166fe0;
 	text-decoration: none;
 }
+
 .popup__game{
     text-align: center;
     position: relative;

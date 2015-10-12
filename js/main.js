@@ -1,3 +1,51 @@
+(function () {
+	var overlay		= document.querySelector(".overlay-popup");
+	var loginPopup	= document.querySelector(".popup-login");
+	var regPopup	= document.querySelector(".popup-reg");
+	var btnLoginPopup = document.querySelector(".popup-login-btn");
+	var btnRegPopup	=	document.querySelector(".popup-reg-btn");
+	var closeRegPopup	= regPopup.querySelector(".popup-reg__close");
+	var closeLoginPopup	= loginPopup.querySelector(".popup-login__close");
+	var switchLoginPopup	= document.querySelector(".js-popup-login-switch");
+	var switchRegPopup	= document.querySelector(".js-popup-reg-switch");
+
+	btnLoginPopup.addEventListener('click', function(event) {
+		event.preventDefault();
+		loginPopup.classList.add('js-popup-show');
+		overlay.classList.add('js-overlay-show');
+	}, false);
+
+	btnRegPopup.addEventListener('click', function(event) {
+		event.preventDefault();
+		regPopup.classList.add('js-popup-show');
+		overlay.classList.add('js-overlay-show');
+	}, false);
+
+	closeRegPopup.addEventListener('click', function(event) {
+		regPopup.classList.remove('js-popup-show');
+		overlay.classList.remove('js-overlay-show');
+	}, false);
+
+	closeLoginPopup.addEventListener('click', function(event) {
+		loginPopup.classList.remove('js-popup-show');
+		overlay.classList.remove('js-overlay-show');
+	}, false);
+
+	switchLoginPopup.addEventListener('click', function(event) {
+		regPopup.classList.remove('js-popup-show');
+		loginPopup.classList.add('js-popup-show');
+		overlay.classList.add('js-overlay-show');
+	});
+
+	switchRegPopup.addEventListener('click', function(event) {
+		loginPopup.classList.remove('js-popup-show');
+		regPopup.classList.add('js-popup-show');
+		overlay.classList.add('js-overlay-show');
+	});
+})();
+
+gh();
+
 $(document).ready(function(){
 			p = $('.blackout')
 $('.recent-table>tbody>tr>td, .list-games__table>tbody>tr>td').click(function() {
