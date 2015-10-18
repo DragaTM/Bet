@@ -366,7 +366,7 @@ body{
 	position: absolute;
 	width: 19px;
     height: 20px;
-	background: url(../img/popup-login-icons.png) no-repeat -5px -5px;
+	background: url(../img/popup-reg-close.png) no-repeat -5px -5px;
 }
 
 .popup-login__title{
