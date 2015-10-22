@@ -1819,6 +1819,7 @@ body{
 .teams-list{
     text-align: center;
     margin: auto;
+	border-collapse: collapse;
 }
 
 .teams-list .teams-title{
@@ -1827,21 +1828,59 @@ body{
     color: #ffffff;
 }
 
-.teams-list .team-logo td{
+.teams-list .teams td{
     width: 112px;
 }
 
-.teams-list .team-flag td{
-    padding: 2px;
+.teams-list .teams td .team-logo{
+	height: 80px;
+	overflow: hidden;
 }
 
-.teams-list .team-name td{
+.teams-list .teams td .team-flag{
+    padding: 2px;
+	height: 20px;
+	overflow: hidden;
+}
+
+.teams-list .teams td .team-name{
     font: 15px 'MorganSans', sans-serif; 
     color: #ffffff;
+	height: 50px;
+	overflow: hidden;
+}
+
+.teams-list .teams td .team-ratio{
+	font: 15px 'MorganSans', sans-serif;
+	color: #959595;
+	height: 20px;
+	overflow: hidden;
+}
+
+.teams-list .teams td input{
+	display: none;
+}
+
+.teams-list .teams td label{
+	cursor: pointer;
+	border: 2px solid transparent;
+	display: block;
+	border-radius: 6px;
+	width: 100%;
+	padding: 12px 5px;
+}
+
+.teams-list .teams td input:checked+label{
+	border: 2px solid #ffffff;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.teams-list .teams td input:checked+label .team-ratio{
+	color: #ffffff;
 }
 
 .tournament-timer{
-    padding-top: 18px;
+    padding-top: 10px;
     text-align: center;
     font: 16px 'MorganSans', sans-serif;
     color: #909090;
@@ -1852,18 +1891,69 @@ body{
     font: 30px 'MorganSans', sans-serif;
 }
 
-.filter a.bet-btn{
+.tournament-bet{
+	margin-top: 15px;
+}
+
+.tournament-bet__winner{
+	text-align: right;
+	min-width: 300px; 
+}
+
+.tournament-bet__chance{
+	min-width: 270px;
+	text-align: left;
+}
+
+.tournament-bet__winner,
+.tournament-bet__can-win,
+.tournament-bet__chance{
+	color: #959595;
+	font: 18px/30px 'MorganSans', sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tournament-bet input{
+	vertical-align: middle;
+	margin-left: 25px;
+	font: 20px/30px 'MorganSansBold', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    width: 60px;
+    padding: 3px 10px;
+	background: transparent;
+    text-align: center;
+	color: #fafafa;
+}
+
+.tournament-bet input:focus{
+    border-color: #2c8d00;
+    color: #2c8d00;
+}
+
+.tournament-bet a.bet-btn{
     display: inline-block;
     background-color: #307ae5;
     background-image: linear-gradient(to bottom, #307ae5, #2f9ae0);
+	margin: 0px 25px;
+	vertical-align: middle;
     text-decoration: none;
     padding-top: 10px;
     height: 40px;
     width: 215px;
-    margin-top: 15px;
     color: #fafafa;
     font: 30px/30px 'MorganSans', sans-serif;
     border-radius: 8px;
+}
+
+.tournament-bet__can-win span,
+.tournament-bet__chance span{
+	min-width: 50px;
+	display: inline-block;
+	text-align: left;
+	color: #ffffff;
+	font: 18px/30px 'MorganSansBold', sans-serif;
 }
 
 .dividing-line{
@@ -2525,6 +2615,7 @@ body{
 }
 
 .country__field{
+	display: none;
     color: #1c1c1c;
 	margin-top: 15px;
     padding-right: 10px;
@@ -2556,6 +2647,10 @@ body{
     font: 22px/28px 'MorganSans', sans-serif;
 }
 
+.setting-menu__password-field{
+	display: none;
+}
+
 .setting-menu__password a.change-password{
     position: relative;
     top: -5px;
@@ -2579,6 +2674,7 @@ body{
 	color: #131313;
 	padding: 0px 10px;
 	width: 185px;
+	border: 1px solid #eeeeee;
 	font: 18px/30px 'MorganSans', sans-serif;
 }
 
