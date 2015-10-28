@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="1200">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css">
+        
+        
+	</head>
+	<body>
+       	<div class="overlay"><img src="img/loading.gif"></div>
+        <div class="wrapper">
+            <div class="bg-page">
+                <div class="header">
+                    <div class="positioner">
+                        <div class="header__menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Bonus</a></li>
+                                <li class="active"><a href="#">Broadcast</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__account">
+                            <div class="account-name">AlexMante</div>
+                            <div class="account-balance">$238.45</div>
+                            <a class="account-bets" href="#">You Bets</a>
+                            <a class="account-payments" href="#">Payments</a>
+                        </div>
+                        <div class="cabinet">
+                            <div class="cabinet__message"><i class="new"></i></div>
+                            <div class="cabinet__language">
+                                <select name="language">
+                                    <option value="ru" selected>Ру</option>
+                                    <option value="en">En</option>
+                                </select>
+                            </div>
+                            <div class="cabinet__login"><i></i>Log Out</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="reg-page">
+                        <div class="positioner">
+                            <a class="logo" href="#"></a>
+                            <div class="reg-page__content">
+								<div class="reg-page__title">Register new account</div>
+								<div class="reg-page__body">
+									<form  class="reg-page__form" action="/echo" method="post">
+										<table>
+											<thead>
+												<tr>
+													<th colspan="3"><span>*</span> - Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. </th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label for="reg-page-nickname">Nickname:</label></td>
+													<td><input id="reg-page-nickname" class="input-error" type="text"></td>
+													<td>*</td>
+												</tr>
+												<tr>
+													<td class="text-error" colspan="2">This nickname is already used</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-name">Name:</label></td>
+													<td><input id="reg-page-name" type="text"></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-lastname">Lastname:</label></td>
+													<td><input id="reg-page-lastname" type="text"></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-date">Birthday:</label></td>
+													<td>
+														<select id="reg-page-date">
+															<option>01</option>
+															<option>02</option>
+															<option>03</option>
+															<option>04</option>
+															<option>05</option>
+															<option>06</option>
+															<option>07</option>
+															<option>08</option>
+															<option>09</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+															<option>13</option>
+															<option>14</option>
+															<option>15</option>
+															<option>16</option>
+															<option>17</option>
+															<option>18</option>
+															<option>19</option>
+															<option>20</option>
+															<option>21</option>
+															<option>22</option>
+															<option>23</option>
+															<option>24</option>
+															<option>25</option>
+															<option>26</option>
+															<option>27</option>
+															<option>28</option>
+															<option>29</option>
+															<option>30</option>
+															<option>31</option>
+														</select>
+														<select id="reg-page-month">
+															<option>01</option>
+															<option>02</option>
+															<option>03</option>
+															<option>04</option>
+															<option>05</option>
+															<option>06</option>
+															<option>07</option>
+															<option>08</option>
+															<option>09</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+														</select>
+														<select id="reg-page-year">
+															<option>1973</option>
+															<option>1974</option>
+															<option>1975</option>
+															<option>1976</option>
+															<option>1977</option>
+															<option>1978</option>
+														</select>
+													</td>
+													<td>*</td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-country">Birthday:</label></td>
+													<td>
+														<select id="reg-page-country">
+															<option>France</option>
+															<option>Italy</option>
+															<option>Scotland</option>
+														</select>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-password">Password:</label></td>
+													<td><input id="reg-page-password" type="text"></td>
+													<td>*</td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-language">Language:</label></td>
+													<td>
+														<select id="reg-page-language">
+															<option>English</option>
+															<option>Русский</option>
+														</select>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td><label for="reg-page-email">Email:</label></td>
+													<td><input id="reg-page-email" type="text"></td>
+													<td>*</td>
+												</tr>
+												<tr>
+													<td></td>
+													<td class="reg-page-term" colspan="2"><input id="reg-page-term" type="checkbox"><label for="reg-page-term">Neque elit. Sed ut imperdiet nisi. Proin condimentum</label></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td><input type="submit" value="Create"></td>
+													<td></td>
+												</tr>
+											</tbody>	
+										</table>
+									</form>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+                       
+            <div class="footer-buffer"></div>
+        </div>
+        <div class="footer">
+            <div class="positioner">
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#">About & Contact Information</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center">
+                    <div class="support">
+                        <div class="support__text">Online support:</div>
+                        <a class="support__btn" href="#">Ask for Help</a>
+                    </div>
+                    <div class="copyright">© 2015 eSportsLeague Ltd. All Rights reserved.</div>
+                    <div class="warning">Warning: Gaming involves risk. You may lose money. Gambling can be addictive. Please play responsibly.<br>
+If  you  think  you may have a problem, please refer to our <a href="#">Gampling Policy.</a><br>
+eSportsLeague memebers must be 18 or over</div>
+                
+                </div>
+                <div class="footer-right">
+                    <div class="social">
+                        <div class="social__text">Join our communities<br>
+to make sure you get all the latest news:</div>
+                        <ul class="social__icons">
+                            <li><a class="social-fb" href="#"></a></li>
+                            <li><a class="social-tw" href="#"></a></li>
+                            <li><a class="social-gp" href="#"></a></li>
+                            <li><a class="social-vk" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

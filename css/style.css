@@ -3159,6 +3159,31 @@ body{
     font: 11px/20px 'MorganSans', sans-serif;
 }
 
+.broadcast__chat-body li .basket{
+	background-image: url(../img/chat-icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 10px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.broadcast__chat-body li .cancel{
+	background-image: url(../img/chat-icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: 7px;
+	vertical-align: middle;
+	cursor: pointer;
+	
+	width: 12px;
+    height: 12px;
+    background-position: -5px -27px;
+}
+
 .broadcast__chat-body li .member{
     padding: 0 8px;
     color: #caca69;
@@ -3686,8 +3711,8 @@ body{
 }
 
 .my-bets table tbody .my-bets__time{
-	max-width: 40px;
-	min-width: 30px;
+	max-width: 45px;
+	min-width: 40px;
 }
 
 .my-bets table tbody .my-bets__game img{
@@ -3838,6 +3863,7 @@ body{
 .express-table tbody td:nth-child(4),
 .express-table tbody td:nth-child(6){
 	overflow: hidden;
+	white-space: nowrap;
 }
 
 .express-table tbody td:nth-child(5),
@@ -3944,13 +3970,265 @@ body{
 }
 
 .express a.bet-btn{
-    margin-top: 20px;
+    margin-top: 15px;
+	display: inline-block;
+    background-color: #307ae5;
+    background-image: linear-gradient(to bottom, #307ae5, #2f9ae0);
+    text-decoration: none;
+    padding-top: 10px;
+    height: 40px;
+    width: 215px;
+    color: #fafafa;
+    font: 30px/30px 'MorganSans', sans-serif;
+    border-radius: 8px;
 }
 
+.contacts{
+	padding: 45px;
+	min-height: 830px;
+}
 
+.contacts__title{
+	text-align: center;
+	color: #ffffff;
+	font: 30px/30px 'MorganSans', sans-serif;
+}
 
+.contacts__body{
+	margin-top: 87px;
+}
 
+.contacts__about-us{
+	padding-top: 2px;
+	color: #979797;
+	vertical-align: top;
+	width: 385px;
+	display: inline-block;
+	margin-left: 230px;
+	font: 15px/28px 'MorganSans', sans-serif;
+}
 
+.contacts__tel-email{
+	display: inline-block;
+	vertical-align: top;
+	width: 430px;
+	color: #ffffff;
+	font: 30px/44px 'MorganSans', sans-serif;
+	margin-left: 112px;
+}
+
+.contacts__tel,
+.contacts__email{
+	position: relative;
+}
+
+.contacts__tel i{
+	display: block;
+	position: absolute;
+	background-image: url(../img/contacts-icons.png);
+    background-repeat: no-repeat;
+	top: 15px;
+	left: -45px;
+    width: 20px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.contacts__email i{
+	display: block;
+	position: absolute;
+	background-image: url(../img/contacts-icons.png);
+    background-repeat: no-repeat;
+	top: 15px;
+	left: -45px;
+    width: 20px;
+    height: 16px;
+    background-position: -5px -35px;
+}
+
+.login-page{
+	min-height: 820px;
+}
+
+.reg-page__title,
+.login-page__title{
+	padding: 45px;
+	text-align: center;
+	color: #ffffff;
+	font: 30px/30px 'MorganSans', sans-serif;	
+}
+
+.login-page__body{
+	width: 300px;
+	margin: 30px auto 0px auto;
+	padding: 30px 30px 30px 40px;
+}
+
+.login-page__body .social-reg__title,
+.login-page__body .email-reg__title{
+	color: #979797;
+}
+
+.login-page__email-reg{
+	margin-top: 40px;
+}
+
+.login-page__email-reg input{
+	width: 262px;
+	border-radius: 10px;
+	border: 2px solid #ffffff;
+	margin: 4px 0 8px 0;
+	color: #515151;
+	font: 20px/30px 'MorganSans', sans-serif;
+	padding: 4px 15px;
+}
+
+.login-page__form input[type="submit"]{
+	margin: 15px 0 5px 0;
+	background-color: #54adff;
+	background-image: linear-gradient(to bottom, #54adff, #035dd7);
+	text-align: center;
+	border-radius: 9px;
+	height: 52px;
+	width: 295px;
+	border: none;
+	color: #fafafa;
+	font: 30px/30px 'MorganSans', sans-serif;
+}
+
+.login-page__form-term{
+	color: #898989;
+	font: 13px/30px 'MorganSans', sans-serif;
+}
+
+.reg-page__content{
+	text-align: center;
+	padding-bottom: 20px;
+	min-height: 800px;
+}
+
+.reg-page__form table{
+	width: 510px;
+	margin: 20px auto 0px;
+	text-align: left;
+}
+
+.reg-page__form th{
+	padding-left: 10px;
+	height: 20px;
+	vertical-align: top;
+	color: #979797;
+	font: 15px/18px 'MorganSans', sans-serif;
+}
+
+.reg-page__form th span{
+	color: #497eee;
+}
+
+.reg-page__form td{
+	overflow: hidden;
+	padding-top: 19px;
+	vertical-align: middle;
+}
+
+.reg-page__form td:first-child{
+	width: 115px;
+	padding-left: 24px;
+	color: #fafafa;
+	font: 21px/30px 'MorganSans', sans-serif;
+}
+
+.reg-page__form td input{
+	border-radius: 9px;
+	width: 308px;
+	color: #979797;
+	padding: 8px 15px;
+	font: 15px/18px 'MorganSans', sans-serif;
+	border: 3px solid #ffffff;
+}
+
+.reg-page__form td input.input-error{
+	border: 3px solid #ff3a3b;
+}
+
+.reg-page__form td:nth-child(3){
+	color: #497eee;
+	font: 25px/18px 'MorganSans', sans-serif;
+}
+
+.reg-page__form td.text-error{
+	text-align: center;
+	padding: 0;
+	color: #ff3a3b;
+	font: 16px/26px 'MorganSans', sans-serif;
+}
+
+.reg-page__form select{
+	width: 105px;
+	height: 40px;
+	background-color: #ffffff;
+	border-radius: 9px;
+	color: #979797;
+	background-image: url(../img/select-bg.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+    outline: 0;
+    border: 0;
+    padding: 0px 30px 0px 10px;
+	cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#reg-page-date,
+#reg-page-month{
+	margin-right: 12px;
+}
+
+#reg-page-country,
+#reg-page-language{
+	width: 344px;
+}
+
+.reg-page-term{
+	margin-top: 30px;
+	overflow: hidden;
+	color: #979797;
+	font: 15px/18px 'MorganSans', sans-serif;
+}
+
+.reg-page-term input{
+	display: none;
+}
+
+.reg-page-term label{
+	display: inline-block;
+	padding-left: 45px;
+	height: 20px;
+	cursor: pointer;
+	
+}
+
+.reg-page-term input+label{
+	background-image: url(../img/express-checkbox-icons.png);
+	background-repeat: no-repeat;
+	background-position: left -110px;
+}
+
+.reg-page-term input:checked+label{
+	background-position: left -30px;
+}
+
+.reg-page input[type="submit"]{
+	border: none;
+	margin-top: 25px;
+    background-color: #307ae5;
+    background-image: linear-gradient(to bottom, #307ae5, #2f9ae0);
+    height: 50px;
+    width: 215px;
+    color: #fafafa;
+    font: 30px/30px 'MorganSans', sans-serif;
+    border-radius: 8px;
+}
 
 
 
