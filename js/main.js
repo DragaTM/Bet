@@ -14,6 +14,7 @@ $('.popup__close').click(function() {
 })
 });
 
+
 $(document).ready(function(){
 	$('td.plus').toggle(function() {
         $(this).children(".multi").css({'background-position': '0px -109px'});
@@ -23,6 +24,7 @@ $(document).ready(function(){
 		$(this).parent().nextUntil('tr.game').hide(500);
   });	
 });
+
 
 $(document).ready(function(){
 	$('.solution > .solution__body')
