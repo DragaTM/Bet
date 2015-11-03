@@ -2242,6 +2242,7 @@ body{
 
 .recent-table thead th span{
     position: relative;
+	white-space: nowrap;
 }
 
 .recent-table thead th i{
@@ -2251,22 +2252,31 @@ body{
     display: block;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-top:9px solid #4e4e4e;
+    border-top:9px solid transparent;
+	border-bottom:9px solid transparent;
     width: 0px;
     height: 0px;
 }
 
-.recent-table thead th.active i{
+.recent-table thead th.tablesorter-headerDesc i{
     border-top:9px solid #fafafa;
 }
   
-.recent-table tbody th,
+.recent-table thead th.tablesorter-headerAsc i{
+	top: 1px;
+    border-bottom:9px solid #fafafa;
+}
+
+.recent-table thead th.tablesorter-headerUnSorted i{
+    border-top:9px solid #4e4e4e;
+}
+
 .recent-table tbody td{
     font: 18px/43px 'MorganSans', sans-serif;
     position: relative;
     padding: 3px 0 2px 7px;
     text-align: center;
-	white-space: pre;
+	white-space: nowrap;
 }
 
 .recent-table tbody tr i.type{
@@ -2336,11 +2346,10 @@ body{
 }
 
 .recent-table tbody td:nth-child(4),
-.recent-table tbody td:nth-child(6),
-.recent-table thead th:nth-child(3),
-.recent-table thead th:nth-child(5){
+.recent-table tbody td:nth-child(6){
     text-align: left;
 	max-width: 200px;
+}
 }
 
 .recent-table tbody td:nth-child(4),
@@ -3759,6 +3768,7 @@ body{
 
 .express-table thead th span{
     position: relative;
+	white-space: nowrap;
 }
 
 .express-table thead th i{
@@ -3768,22 +3778,31 @@ body{
     display: block;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-top:9px solid #4e4e4e;
+    border-top:9px solid transparent;
+	border-bottom:9px solid transparent;
     width: 0px;
     height: 0px;
 }
 
-.express-table thead th.active i{
+.express-table thead th.tablesorter-headerDesc i{
     border-top:9px solid #fafafa;
 }
   
-.express-table tbody th,
+.express-table thead th.tablesorter-headerAsc i{
+	top: 1px;
+    border-bottom:9px solid #fafafa;
+}
+
+.express-table thead th.tablesorter-headerUnSorted i{
+    border-top:9px solid #4e4e4e;
+}
+
 .express-table tbody td{
     font: 18px/43px 'MorganSans', sans-serif;
     position: relative;
     padding: 3px 0 2px 7px;
     text-align: center;
-	white-space: pre;
+	white-space: nowrap;
 }
 
 .express-table tbody tr i.type{
@@ -3853,11 +3872,9 @@ body{
 }
 
 .express-table tbody td:nth-child(4),
-.express-table tbody td:nth-child(6),
-.express-table thead th:nth-child(3),
-.express-table thead th:nth-child(5){
+.express-table tbody td:nth-child(6){
     text-align: left;
-	max-width: 210px;
+	max-width: 200px;
 }
 
 .express-table tbody td:nth-child(4),
@@ -3896,6 +3913,7 @@ body{
 }
 
 .express-table tbody td label{
+	cursor: pointer;
 	display: inline-block;
 	padding: 0 30px 0 0;
 }

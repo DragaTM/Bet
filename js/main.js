@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	p = $('.blackout')
-$('.recent-table>tbody>tr>td, .list-games__table>tbody>tr>td').click(function() {
+$('.recent-table>tbody>tr, .list-games__table>tbody>tr>td').click(function() {
     p.css({'opacity':'1', 'visibility':'visible'})
 })
 p.click(function(event) {
@@ -15,19 +15,12 @@ $('.popup__close').click(function() {
 });
 
 $(document).ready(function(){
-			g = $('.overlay')
-$('.loading').click(function() {
-    g.css({'opacity':'1', 'visibility':'visible'})
-})
-});
-
-$(document).ready(function(){
-	$('th').toggle(function() {
+	$('td.plus').toggle(function() {
         $(this).children(".multi").css({'background-position': '0px -109px'});
-		$(this).parent().nextUntil('tr:has(th)').show(500);
+		$(this).parent().nextUntil('tr.game').show(500);
   }, function() {
 	    $(this).children(".multi").css({'background-position':'-100px -5px'});
-		$(this).parent().nextUntil('tr:has(th)').hide(500);
+		$(this).parent().nextUntil('tr.game').hide(500);
   });	
 });
 
