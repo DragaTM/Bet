@@ -16,12 +16,12 @@ $('.popup__close').click(function() {
 
 
 $(document).ready(function(){
-	$('td.plus').toggle(function() {
-        $(this).children(".multi").css({'background-position': '0px -109px'});
-		$(this).parent().nextUntil('tr.game').show(500);
+	$('i.multi').toggle(function() {
+        $(this).css({'background-position': '0px -109px'});
+		$(this).parent().parent().nextUntil('tr.game').show(500);
   }, function() {
-	    $(this).children(".multi").css({'background-position':'-100px -5px'});
-		$(this).parent().nextUntil('tr.game').hide(500);
+	    $(this).css({'background-position':'-100px -5px'});
+		$(this).parent().parent().nextUntil('tr.game').hide(500);
   });	
 });
 

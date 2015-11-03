@@ -2345,21 +2345,20 @@ body{
     vertical-align: middle;
 }
 
-.recent-table tbody td:nth-child(4),
-.recent-table tbody td:nth-child(6){
-    text-align: left;
-	max-width: 200px;
-}
+.recent-table tbody td:nth-child(1){
+	padding-left: 10px;
 }
 
-.recent-table tbody td:nth-child(4),
-.recent-table tbody td:nth-child(6){
+.recent-table tbody td:nth-child(3),
+.recent-table tbody td:nth-child(5){
+    text-align: left;
+	max-width: 200px;
 	overflow: hidden;
 }
 
-.recent-table tbody td:nth-child(5),
-.recent-table tbody td:nth-child(7),
-.recent-table tbody td:nth-child(8){
+.recent-table tbody td:nth-child(4),
+.recent-table tbody td:nth-child(6),
+.recent-table tbody td:nth-child(7){
     font: 18px/43px 'MorganSansBold', sans-serif;
 }
 
@@ -3871,10 +3870,14 @@ body{
     vertical-align: middle;
 }
 
-.express-table tbody td:nth-child(4),
-.express-table tbody td:nth-child(6){
+.express-table tbody td:nth-child(3),
+.express-table tbody td:nth-child(5){
     text-align: left;
 	max-width: 200px;
+}
+
+.express-table tbody td:nth-child(1){
+	padding-left: 13px;
 }
 
 .express-table tbody td:nth-child(4),
@@ -3883,14 +3886,14 @@ body{
 	white-space: nowrap;
 }
 
-.express-table tbody td:nth-child(5),
-.express-table tbody td:nth-child(7),
-.express-table tbody td:nth-child(8){
+.express-table tbody td:nth-child(4),
+.express-table tbody td:nth-child(6),
+.express-table tbody td:nth-child(7){
     font: 18px/43px 'MorganSansBold', sans-serif;
 }
 
-.express-table tbody td:nth-child(5),
-.express-table tbody td:nth-child(7){
+.express-table tbody td:nth-child(4),
+.express-table tbody td:nth-child(6){
 	text-align: right;
 }
 
