@@ -940,7 +940,7 @@ body{
     font-family: 'MorganSans', sans-serif;
     min-height: 100%;
 	margin-bottom: -325px;
-    background: #000000;
+    background: #131313;
     min-width: 1200px;
 }
 
@@ -1265,7 +1265,7 @@ body{
 .logo{
     position: absolute;
     z-index: 3;
-    top: 35px;
+    top: 5px;
     left: 45px;
     display: block;
     background: url(../img/logo.png) no-repeat;
@@ -1671,18 +1671,23 @@ body{
 	background-repeat: no-repeat;
 }
 
+.main{
+	padding-top: 30px;
+}
+
 .filter ul.games-filter{
     font: 18px/18px 'MorganSans', sans-serif;
-    margin: 0 auto;
+    margin: 0 auto 7px;
+	width: 800px;
     color: #ffffff;
     text-align: center;
-    padding: 37px 0 0 0;
+    padding: 0 0 10px 0;
 }
 
 .games-filter li{
     display: inline-block;
-    vertical-align: text-top;
-    margin: 0 11px;
+    vertical-align: top;
+    margin: 7px 11px;
     height: 48px;
     width: 125px;
     color: #868288;
@@ -1692,6 +1697,9 @@ body{
 }
 
 .games-filter li span{
+	overflow: hidden;
+	padding: 0 15px;
+	max-width: 95px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -1702,6 +1710,7 @@ body{
 }
 
 .games-filter li label{
+	margin-bottom: 7px;
     position: relative;
     display: table;
     width: 100%;
@@ -1729,8 +1738,8 @@ body{
 } 
 
 .filter-menu{
+	margin-top: 0;
     text-align: center;
-    margin-top: 37px;
     padding-right: 30px;
     background: url(../img/opacity.png);
     height: 37px;
@@ -3675,9 +3684,11 @@ body{
 }
 
 .my-bets table tbody td{
+	min-width: 5px;
 	vertical-align: middle;
+	overflow: hidden;
 	height: 58px;
-	padding: 0 5px 0 10px;;
+	padding: 0 5px 0 10px;
 	text-align: left;
 	color: #979797;
 	font: 15px/18px 'MorganSans', sans-serif;
@@ -3714,21 +3725,40 @@ body{
 }
 
 .my-bets table tbody .my-bets__team{
+	min-width: 130px;
+	max-width: 130px;
+	white-space: nowrap;
 	margin-left: 8px;
 	text-align: left;
 }
 
 .my-bets table tbody .my-bets__time{
+	min-width: 45px;
 	max-width: 45px;
-	min-width: 40px;
+}
+
+.my-bets table tbody .my-bets__game{
+	min-width: 25px;
+	max-width: 25px;
 }
 
 .my-bets table tbody .my-bets__game img{
-	text-align: center;
+	display: block;
+	margin:auto;
 }
 
 .my-bets table tbody .my-bets__team span{
 	padding-left: 8px;
+}
+
+.my-bets table tbody .my-bets__bet-info{
+	min-width: 180px;
+	max-width: 180px;
+}
+
+.my-bets table tbody .my-bets__bet-coef{
+	min-width: 80px;
+	max-width: 80px;
 }
 
 .my-bets table tbody .my-bets__new .my-bets__bet-info,
